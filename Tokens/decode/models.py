@@ -6,12 +6,12 @@ class customtable(models.Model):
     last_name=models.CharField(max_length=255)
     username=models.CharField(max_length=255)
     email=models.CharField(max_length=255)
-    passwords=models.CharField(max_length=255)
+    password=models.CharField(max_length=255)
     Roles=models.CharField(max_length=255)
-    creatby=models.IntegerField(blank=True)
+    created_by=models.IntegerField(blank=True)
     created_at=models.DateField(auto_now_add=True)
-    updatedby=models.IntegerField(blank=True)
-    update_at=models.DateField(auto_now=True)
+    updated_by=models.IntegerField(blank=True)
+    updated_at=models.DateField(auto_now=True)
     
     class Meta:
         managed=False
